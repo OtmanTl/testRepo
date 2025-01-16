@@ -19,7 +19,7 @@ Settings.embed_model = FastEmbedEmbedding(model_name="jinaai/jina-embeddings-v2-
 class ChatbotInterface:
     def __init__(self):
         self.collection_name = "user_collection"
-        self.client = QdrantClient(url="http://localhost:6333")
+        self.client = QdrantClient(url="http://72.144.113.188:6333/")
         self.initialize_chat_engine()
 
     def initialize_chat_engine(self):
